@@ -60,7 +60,8 @@
   line-height: 1;
 }
 
-.tittle {
+.greeting-container {
+  text-align: center;
   color: red;
 }
 

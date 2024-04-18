@@ -1,9 +1,10 @@
 import Navbar from "./Navbar";
+import Greeting from "./ItemListContainer";
 function App() {
   return (
     <div>
       <Navbar />
-      <h1 class="tittle"> Pedi ahora !</h1>
+      <Greeting greeting="¡Pedi Ahora!" />
     </div>
   );
 }
