@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Greeting greeting="¡Pedi Ahora!" />
+      <Greeting greeting="¡Hola! ¿Que vas a pedir hoy?" />
     </div>
   );
 }
