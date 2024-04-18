@@ -1,5 +1,6 @@
 import "./menu.css";
 import icono from "./assets/favicon.png";
+import CartWidget from "./CartWidget";
 
 const Menu = () => {
   return (
@@ -15,10 +16,7 @@ const Menu = () => {
           <div class="support">
             <a href="#">Soporte! </a>
           </div>
-
-          <div class="cart">
-            <i class="fa-solid fa-cart-shopping" id="carrito"></i>
-          </div>
+          <CartWidget />
         </div>
       </nav>
     </header>
