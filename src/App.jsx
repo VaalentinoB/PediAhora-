@@ -1,8 +1,8 @@
-import Menu from "./menu";
+import Navbar from "./Navbar";
 function App() {
   return (
     <div>
-      <Menu />
+      <Navbar />
       <h1 class="tittle"> Pedi ahora !</h1>
     </div>
   );

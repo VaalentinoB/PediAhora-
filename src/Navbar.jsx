@@ -2,7 +2,7 @@ import "./menu.css";
 import icono from "./assets/favicon.png";
 import CartWidget from "./CartWidget";
 
-const Menu = () => {
+const Navbar = () => {
   return (
     <header>
       <nav class="nav">
@@ -22,4 +22,4 @@ const Menu = () => {
     </header>
   );
 };
-export default Menu;
+export default Navbar;
