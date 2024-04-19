@@ -1,8 +1,8 @@
 const Item = ({ item }) => {
   return (
-    <div className="item-container">
-      <h3>{item.name}</h3>
-      <p>Precio: {item.price}</p>
+    <div className="item">
+      <h3>{item.nombre}</h3>
+      <p>Precio: {item.precio}</p>
     </div>
   );
 };

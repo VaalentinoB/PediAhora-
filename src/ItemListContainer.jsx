@@ -1,36 +1,13 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve([
-        {
-          id: 1,
-          nombre: "Buzo 1",
-          tipo: "buzo",
-          precio: 1200,
-        },
-
-        {
-          id: 2,
-          nombre: "Remera 1",
-          tipo: "remera",
-          precio: 500,
-        },
-        {
-          id: 3,
-          nombre: "Remera Oz",
-          tipo: "remera",
-          precio: 5000,
-        },
-        {
-          id: 2,
-          nombre: "Buzo oz 1",
-          tipo: "Buzardo",
-          precio: 2500,
-        },
+        { id: 1, nombre: "Product 1", precio: 10 },
+        { id: 2, nombre: "Product 2", precio: 20 },
+        { id: 3, nombre: "Product 3", precio: 30 },
       ]);
     }, 3000);
   });
@@ -38,6 +15,8 @@ const fetchItems = () => {
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchItems();
@@ -45,20 +24,14 @@ const ItemListContainer = () => {
       setLoading(false);
     };
     fetchData();
-  }, [])
+  }, []);
 
-return (
-    
+  return (
+    <div className="item-list-container">
       <h1>Que vas a pedir hoy?</h1>
-      {
-        loading 
-        ? <div>Cargando..</div>
-        : <ItemList items={items} />
-      }
-      
-      
-   
-)
+      {loading ? <div>Cargando..</div> : <ItemList items={items} />}
+    </div>
+  );
 };
 
 export default ItemListContainer;

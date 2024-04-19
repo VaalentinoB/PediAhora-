@@ -1,11 +1,15 @@
 import Navbar from "./Navbar";
-import Greeting from "./ItemListContainer";
+import ItemListContainer from "./ItemListContainer";
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Greeting greeting="¡Hola! ¿Que vas a pedir hoy?" />
-    </div>
+    <>
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <ItemListContainer />
+      </div>
+    </>
   );
 }
 
