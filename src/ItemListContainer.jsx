@@ -1,13 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-
-const Greeting = (props) => {
-  return (
-    <div className="greeting-container">
-      <h1>{props.greeting}</h1>
-    </div>
-  );
-};
+import ItemList from "./ItemList";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
@@ -49,10 +42,23 @@ const ItemListContainer = () => {
     const fetchData = async () => {
       const data = await fetchItems();
       setItems(data);
+      setLoading(false);
     };
     fetchData();
-  }, []);
-  return <div className="list-container"></div>;
+  }, [])
+
+return (
+    
+      <h1>Que vas a pedir hoy?</h1>
+      {
+        loading 
+        ? <div>Cargando..</div>
+        : <ItemList items={items} />
+      }
+      
+      
+   
+)
 };
 
-export default Greeting;
+export default ItemListContainer;

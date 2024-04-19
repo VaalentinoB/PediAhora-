@@ -1,3 +1,5 @@
+import Item from "./Item";
+
 const ItemList = () => {
   return (
     <div className="itemlist-container">
