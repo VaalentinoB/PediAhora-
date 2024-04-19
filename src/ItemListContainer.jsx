@@ -5,11 +5,11 @@ const fetchItems = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve([
-        { id: 1, nombre: "Product 1", precio: 10 },
-        { id: 2, nombre: "Product 2", precio: 20 },
-        { id: 3, nombre: "Product 3", precio: 30 },
+        { id: 1, name: " Restaurante el gauchito", price: 10 },
+        { id: 2, name: "Restaurante Picolino", price: 20 },
+        { id: 3, name: "Restaurante tu viejo", price: 30 },
       ]);
-    }, 3000);
+    }, 1500);
   });
 };
 
