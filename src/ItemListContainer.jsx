@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
+import { cards } from "./utils";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve([
-        { id: 1, name: " Restaurante el gauchito", price: 10 },
-        { id: 2, name: "Restaurante Picolino", price: 20 },
-        { id: 3, name: "Restaurante tu viejo", price: 30 },
-      ]);
+      resolve(cards);
     }, 1500);
   });
 };

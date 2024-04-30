@@ -80,3 +80,27 @@
     padding: 3px;
   }
 }
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.item-image {
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+.item-name {
+  margin-bottom: 8px;
+}
+.item-price {
+  font-weight: bold;
+}
