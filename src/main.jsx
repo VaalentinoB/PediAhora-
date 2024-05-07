@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route exact path="*" element={<NotFound />} />
-        <Route exact path="/soporte" element={<support />} />
+        <Route exact path="/support" element={<support />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
