@@ -9,7 +9,7 @@ const Item = ({ item }) => {
         <div class="card-details">
           <h3 class="card-title">{item.name}</h3>
           <p class="card-price">Precio: ${item.price}</p>
-          <p class="card-description">Descripción del producto aquí.</p>
+          <p class="card-restaurant">{item.restaurant}</p>
           <div class="button-wrapper">
             <ItemCount
               stock={10}
