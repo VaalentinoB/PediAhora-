@@ -1,16 +1,21 @@
 import "./ItemList";
+import ItemCount from "./counter";
 
 const Item = ({ item }) => {
   return (
-    <div class="container">
-      <div class="wrapper">
-        <img src={item.imageUrl} alt="item.name" className="banner-image" />
-        <div className="item-details">
-          <h3 className="item-name">{item.name}</h3>
-          <p className="item-price">Precio: ${item.price}</p>
+    <div class="card-container">
+      <div class="card-wrapper">
+        <img src={item.imageUrl} alt={item.name} class="card-image" />
+        <div class="card-details">
+          <h3 class="card-title">{item.name}</h3>
+          <p class="card-price">Precio: ${item.price}</p>
+          <p class="card-description">Descripción del producto aquí.</p>
           <div class="button-wrapper">
-            <button class="btn outline">DETAILS</button>
-            <button class="btn fill">BUY NOW</button>
+            <ItemCount
+              stock={10}
+              initial={1}
+              onAdd={(count) => console.log("Cantidad agregada", count)}
+            />
           </div>
         </div>
       </div>

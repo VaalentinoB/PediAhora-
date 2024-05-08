@@ -4,6 +4,7 @@ export const cards = [
     imageUrl: "https://picsum.photos/200",
     name: "Product 1",
     price: 10,
+
   },
   {
     id: 2,

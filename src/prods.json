@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "imageUrl": "https://picsum.photos/200",
+    "imageUrl": "https://picsum.photos/203",
     "name": "Product 1",
     "price": 10
   },
   {
     "id": 2,
-    "imageUrl": "https://picsum.photos/200",
+    "imageUrl": "https://picsum.photos/205",
     "name": "Product 2",
     "price": 20
   },
   {
     "id": 3,
-    "imageUrl": "https://picsum.photos/200",
+    "imageUrl": "https://picsum.photos/220",
     "name": "Product 3",
     "price": 30
   }

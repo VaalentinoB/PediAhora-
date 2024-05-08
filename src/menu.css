@@ -61,96 +61,93 @@
   line-height: 1;
 }
 
-.container {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.25);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  padding: 38px;
-  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+.card-container {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-details {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.btn.fill {
+  background-color: #007bff;
+  color: #fff;
+}
+.cart-controls {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
+.counter-container {
+  display: flex;
+  align-items: center;
 }
 
-.banner-image {
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.255);
-}
-
-h1 {
-  font-family: "Righteous", sans-serif;
-  color: rgba(255, 255, 255, 0.98);
-  text-transform: uppercase;
-  font-size: 2.4rem;
-}
-
-p {
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  font-size: 0.8rem;
-  line-height: 150%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.button-wrapper {
-  margin-top: 18px;
-}
-
-.btn {
+.decrement-btn,
+.increment-btn,
+.add-to-cart-btn {
+  padding: 10px 20px;
   border: none;
-  padding: 12px 24px;
-  border-radius: 24px;
-  font-size: 12px;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.btn + .btn {
-  margin-left: 10px;
+.decrement-btn,
+.increment-btn {
+  background-color: #007bff;
+  color: #fff;
 }
 
-.outline {
-  background: transparent;
-  color: rgba(0, 212, 255, 0.9);
-  border: 1px solid rgba(0, 212, 255, 0.6);
-  transition: all 0.3s ease;
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: #fff;
 }
 
-.outline:hover {
-  transform: scale(1.125);
-  color: rgba(255, 255, 255, 0.9);
-  border-color: rgba(255, 255, 255, 0.9);
-  transition: all 0.3s ease;
-}
-
-.fill {
-  background: rgba(0, 212, 255, 0.9);
-  color: rgba(255, 255, 255, 0.95);
-  filter: drop-shadow(0);
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.fill:hover {
-  transform: scale(1.125);
-  border-color: rgba(255, 255, 255, 0.9);
-  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
-  transition: all 0.3s ease;
+.count {
+  margin: 0 10px;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
