@@ -1,4 +1,4 @@
-export const cards = [
+export const products = [
   {
     id: 1,
     imageUrl: "https://picsum.photos/201",
@@ -38,8 +38,10 @@ export const getProducts = () => {
 export const getProductsById = (productId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(cards.find(cards => cards.id === productId))
+      resolve(products.find(products => products.id === productId))
     }, 500);
 
   })
 }
+
+

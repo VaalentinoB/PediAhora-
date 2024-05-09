@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import { cards } from "./utils";
+import { products } from "./utils";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(cards);
+      resolve(products);
     }, 1500);
   });
 };

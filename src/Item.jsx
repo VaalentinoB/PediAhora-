@@ -10,13 +10,8 @@ const Item = ({ item }) => {
           <h3 class="card-title">{item.name}</h3>
           <p class="card-price">Precio: ${item.price}</p>
           <p class="card-restaurant">{item.restaurant}</p>
-          <div class="button-wrapper">
-            <ItemCount
-              stock={10}
-              initial={1}
-              onAdd={(count) => console.log("Cantidad agregada", count)}
-            />
-          </div>
+          <div class="button-wrapper"></div>
+          <button class="detail-btn">Ver detalle</button>
         </div>
       </div>
     </div>
@@ -24,3 +19,5 @@ const Item = ({ item }) => {
 };
 
 export default Item;
+
+//* <ItemCount stock={10} initial={1} onAdd={(count) => console.log("Cantidad agregada", count)}/> *//
