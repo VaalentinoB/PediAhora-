@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import { products } from "./utils";
+import products from "./producto.json";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
