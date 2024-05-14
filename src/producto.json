@@ -3,6 +3,7 @@
     "id": 1,
     "imageUrl": "https://picsum.photos/201",
     "name": "Sanguche de milanesa",
+    "category": "Sandwich",
     "price": 8600,
     "restaurant": "Restaurante  - El palmar "
   },
@@ -10,8 +11,71 @@
     "id": 2,
     "imageUrl": "https://picsum.photos/202",
     "name": "Tarta de JQ",
+    "category": "Tartas y empanadas",
     "price": 6500,
     "restaurant": "Restaurante  - Nueva roma "
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://picsum.photos/204",
+    "name": "Sushi tabla variada",
+    "category": "Sushi",
+    "price": 16000,
+    "restaurant": "Restaurante  - Sushi Santa fe "
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://picsum.photos/206",
+    "name": "Picada para 3 personas",
+    "category": "Picadas",
+    "price": 10000,
+    "restaurant": "Restaurante  - Cerveceria Santa fe "
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://picsum.photos/205",
+    "name": "Parillada para 5 personas",
+    "category": "Parrilladas",
+    "price": 30000,
+    "restaurant": "Restaurante  - Cerveceria Santa fe "
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://picsum.photos/207",
+    "name": "Cuarto Helado",
+    "category": "Helados",
+    "price": 3500,
+    "restaurant": "Cremolatti"
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://picsum.photos/208",
+    "name": "Medio kilo helado",
+    "category": "Helados",
+    "price": 6000,
+    "restaurant": "Cremolatti"
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://picsum.photos/209",
+    "name": "Kilo helado",
+    "category": "Helados",
+    "price": 10000,
+    "restaurant": "Cremolatti"
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://picsum.photos/204",
+    "name": "Sushi tabla variada",
+    "price": 16000,
+    "restaurant": "Restaurante  - Sushi Santa fe "
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://picsum.photos/204",
+    "name": "Sushi tabla variada",
+    "price": 16000,
+    "restaurant": "Restaurante  - Sushi Santa fe "
   },
   {
     "id": 3,
