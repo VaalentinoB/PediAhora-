@@ -5,6 +5,7 @@
     "name": "Sanguche de milanesa",
     "category": "Sandwich",
     "price": 8600,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Restaurante  - El palmar "
   },
   {
@@ -13,6 +14,7 @@
     "name": "Tarta de JQ",
     "category": "Tartas y empanadas",
     "price": 6500,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Restaurante  - Nueva roma "
   },
   {
@@ -21,6 +23,7 @@
     "name": "Sushi tabla variada",
     "category": "Sushi",
     "price": 16000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Restaurante  - Sushi Santa fe "
   },
   {
@@ -29,6 +32,7 @@
     "name": "Picada para 3 personas",
     "category": "Picadas",
     "price": 10000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Restaurante  - Cerveceria Santa fe "
   },
   {
@@ -37,6 +41,7 @@
     "name": "Parillada para 5 personas",
     "category": "Parrilladas",
     "price": 30000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Restaurante  - Cerveceria Santa fe "
   },
   {
@@ -45,6 +50,7 @@
     "name": "Cuarto Helado",
     "category": "Helados",
     "price": 3500,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Cremolatti"
   },
   {
@@ -53,6 +59,7 @@
     "name": "Medio kilo helado",
     "category": "Helados",
     "price": 6000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Cremolatti"
   },
   {
@@ -61,6 +68,7 @@
     "name": "Kilo helado",
     "category": "Helados",
     "price": 10000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Cremolatti"
   },
   {
@@ -69,6 +77,7 @@
     "name": "Sushi tabla veggie",
     "category": "Sushi",
     "price": 6000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Restaurante  - Sushitown "
   },
   {
@@ -77,6 +86,7 @@
     "name": "Docena empanadas",
     "category": "Tartas y empanadas",
     "price": 16000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Empanapizza"
   },
   {
@@ -85,6 +95,7 @@
     "name": "Empanada - Una unidad",
     "category": "Tartas y empanadas",
     "price": 1600,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Empanapizza"
   }
 ]
