@@ -65,23 +65,26 @@
   },
   {
     "id": 9,
-    "imageUrl": "https://picsum.photos/204",
-    "name": "Sushi tabla variada",
-    "price": 16000,
-    "restaurant": "Restaurante  - Sushi Santa fe "
+    "imageUrl": "https://picsum.photos/210",
+    "name": "Sushi tabla veggie",
+    "category": "Sushi",
+    "price": 6000,
+    "restaurant": "Restaurante  - Sushitown "
   },
   {
-    "id": 3,
-    "imageUrl": "https://picsum.photos/204",
-    "name": "Sushi tabla variada",
+    "id": 10,
+    "imageUrl": "https://picsum.photos/2",
+    "name": "Docena empanadas",
+    "category": "Tartas y empanadas",
     "price": 16000,
-    "restaurant": "Restaurante  - Sushi Santa fe "
+    "restaurant": "Empanapizza"
   },
   {
-    "id": 3,
+    "id": 11,
     "imageUrl": "https://picsum.photos/204",
-    "name": "Sushi tabla variada",
-    "price": 16000,
-    "restaurant": "Restaurante  - Sushi Santa fe "
+    "name": "Empanada - Una unidad",
+    "category": "Tartas y empanadas",
+    "price": 1600,
+    "restaurant": "Empanapizza"
   }
 ]
