@@ -1,4 +1,4 @@
-import "./menu.css";
+import "./assets/styles/menu.css";
 import icono from "./assets/favicon.png";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";

@@ -1,4 +1,4 @@
-import "./ItemDetail.css";
+import "./assets/styles/details.css";
 
 const Item = ({ item }) => {
   return (

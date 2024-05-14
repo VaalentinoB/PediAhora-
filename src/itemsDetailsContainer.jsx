@@ -1,22 +1,33 @@
 import { useEffect, useState } from "react";
+import Loading from "./loading";
+import ItemDetail from "./ItemDetail";
+import products from "./producto.json";
+import { useParams } from "react-router-dom";
 
-const ItemsDetailsContainer = () => {
-  const [product, setProduct] = useState(null);
+const fetchItems = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products);
+    }, 2000);
+  });
+};
+
+const ItemDetailContainer = () => {
+  const [item, setItem] = useState({});
+  const [loading, setLoading] = useState(true);
+  const { id } = useParams();
 
   useEffect(() => {
-    getProductById(1)
-      .then((response) => {
-        setProduct(response);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+    const fetchData = async () => {
+      const data = await fetchItems();
+      setItem(id ? data.find((item) => item.id == id) : {});
+      setLoading(false);
+    };
 
-  return (
-    <div className="ItemDetailContainer">
-      <ItemDetail {...product} />
-    </div>
-  );
+    fetchData();
+  }, [id]);
+
+  return <>{loading ? <Loading /> : <ItemDetail item={item} />}</>;
 };
-export default ItemsDetailsContainer;
+
+export default ItemDetailContainer;
