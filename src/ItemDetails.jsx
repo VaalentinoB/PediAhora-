@@ -1,6 +1,6 @@
 import "./assets/styles/details.css";
 
-const Item = ({ item }) => {
+const ItemDetail = ({ item }) => {
   return (
     <>
       <div className="item-card">
@@ -15,4 +15,4 @@ const Item = ({ item }) => {
   );
 };
 
-export default Item;
+export default ItemDetail;
