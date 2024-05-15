@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import products from "./producto.json";
+import Loading from "./loading";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
@@ -26,7 +27,7 @@ const ItemListContainer = () => {
   return (
     <div className="item-list-container">
       <h1>Que vas a pedir hoy?</h1>
-      {loading ? <div>Cargando..</div> : <ItemList items={items} />}
+      {loading ? <Loading /> : <ItemList items={items} />}
     </div>
   );
 };
