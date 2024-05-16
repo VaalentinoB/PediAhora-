@@ -6,8 +6,8 @@ import products from "./producto.json";
 const fetchItems = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      const productos = products.find((item) => item.id === 1);
-      resolve(productos);
+      const producto = products.find((item) => item.id === 1);
+      resolve(producto);
     }, 2000);
   });
 };

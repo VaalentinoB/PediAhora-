@@ -7,53 +7,54 @@ const Navbar = () => {
   return (
     <header>
       <nav class="nav">
-        <a href="/index.html" class="logo">
+        <a class="logo">
           <div class="logo">
             <img src={icono} alt="Logo de la página" />
           </div>
         </a>
-
-        <div className="row">
-          <div className="col"></div>
-          <div className="col">
-            <ul className="nav justify-content-center">
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link text-secondary"
-                  to={"/category/sushi"}
-                >
-                  Sushi
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link text-secondary"
-                  to={"/category/EmpanadasYPizzas"}
-                >
-                  Empanadas y pizzas
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link text-secondary"
-                  to={"/category/tablas"}
-                >
-                  Tablas
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link text-secondary"
-                  to={"/category/helados"}
-                >
-                  Helados
-                </NavLink>
-              </li>
-            </ul>
+        <Link>
+          <div className="row">
+            <div className="col"></div>
+            <div className="col">
+              <ul className="nav justify-content-center">
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-secondary"
+                    to={"/category/sushi"}
+                  >
+                    Sushi
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-secondary"
+                    to={"/category/EmpanadasYPizzas"}
+                  >
+                    Empanadas y pizzas
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-secondary"
+                    to={"/category/tablas"}
+                  >
+                    Tablas
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-secondary"
+                    to={"/category/helados"}
+                  >
+                    Helados
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+            <div className="col text-end"></div>
           </div>
-          <div className="col text-end"></div>
-          <CartWidget />
-        </div>
+        </Link>
+        <CartWidget />
       </nav>
     </header>
   );

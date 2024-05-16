@@ -20,6 +20,7 @@ function App() {
           <Route exact path={"*"} element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <ItemDetailContainer />
     </>
   );
 }

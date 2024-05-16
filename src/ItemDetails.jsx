@@ -1,14 +1,15 @@
 import "./assets/styles/details.css";
+import ItemCount from "./counter";
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ items }) => {
   return (
     <>
       <div className="item-card">
-        <img src={item.imageUrl} alt={item.name} className="item-image" />
+        <img src={items.imageUrl} alt={items.name} className="item-image" />
         <div className="item-details">
-          <h3 className="item-name">{item.name}</h3>
-          <h4 className="item-description">{item.description}</h4>
-          <p className="item-price">Precio: ${item.price}</p>
+          <h3 className="item-name">{items.name}</h3>
+          <h4 className="item-description">{items.description}</h4>
+          <p className="item-price">Precio: ${items.price}</p>
           <ItemCount
             stock={10}
             initial={1}
