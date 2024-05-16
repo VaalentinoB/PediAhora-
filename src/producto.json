@@ -12,7 +12,7 @@
     "id": 2,
     "imageUrl": "https://picsum.photos/202",
     "name": "Tarta de JQ",
-    "category": "Tartas y empanadas",
+    "category": "TartasyEmpanadas",
     "price": 6500,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Restaurante  - Nueva roma "
@@ -84,7 +84,7 @@
     "id": 10,
     "imageUrl": "https://picsum.photos/2",
     "name": "Docena empanadas",
-    "category": "Tartas y empanadas",
+    "category": "TartasyEmpanadas",
     "price": 16000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Empanapizza"
@@ -93,7 +93,7 @@
     "id": 11,
     "imageUrl": "https://picsum.photos/204",
     "name": "Empanada - Una unidad",
-    "category": "Tartas y empanadas",
+    "category": "TartasyEmpanadas",
     "price": 1600,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla. Diam in arcu cursus euismod quis viverra. Proin sed libero enim sed faucibus turpis in eu mi. Placerat in egestas erat imperdiet sed. Duis tristique sollicitudin nibh sit amet commodo. Tristique senectus et netus et malesuada. Interdum velit euismod in pellentesque. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Ante in nibh mauris cursus mattis molestie a. Volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing.",
     "restaurant": "Empanapizza"

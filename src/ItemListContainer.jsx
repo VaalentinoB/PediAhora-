@@ -3,11 +3,12 @@ import ItemList from "./ItemList";
 import products from "./producto.json";
 import Loading from "./loading";
 import "./assets/styles/menu.css";
+import { useParams } from "react-router-dom";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(products);
+      resolve(id ? products.filter((items) => items.category == id) : products);
     }, 1500);
   });
 };
@@ -15,6 +16,8 @@ const fetchItems = () => {
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { id } = useParams();
+  console.log(id);
 
   useEffect(() => {
     const fetchData = async () => {

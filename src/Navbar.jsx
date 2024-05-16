@@ -20,7 +20,23 @@ const Navbar = () => {
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-secondary"
-                    to={"/category/sushi"}
+                    to={"/category/Sandwich"}
+                  >
+                    Sandwich
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-secondary"
+                    to={"/category/TartasyEmpanadas"}
+                  >
+                    Tartas y empanadas
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-secondary"
+                    to={"/category/Sushi"}
                   >
                     Sushi
                   </NavLink>
@@ -28,23 +44,23 @@ const Navbar = () => {
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-secondary"
-                    to={"/category/EmpanadasYPizzas"}
+                    to={"/category/Picadas"}
                   >
-                    Empanadas y pizzas
+                    Picadas
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-secondary"
-                    to={"/category/tablas"}
+                    to={"/category/Helados"}
                   >
-                    Tablas
+                    Helados
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-secondary"
-                    to={"/category/helados"}
+                    to={"/category/Helados"}
                   >
                     Helados
                   </NavLink>
