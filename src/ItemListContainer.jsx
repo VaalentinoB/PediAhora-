@@ -5,10 +5,10 @@ import Loading from "./loading";
 import "./assets/styles/menu.css";
 import { useParams } from "react-router-dom";
 
-const fetchItems = () => {
+const fetchItems = (id) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(id ? products.filter((items) => items.category == id) : products);
+      resolve(id ? products.filter((item) => item.category === id) : products);
     }, 1500);
   });
 };
@@ -26,7 +26,7 @@ const ItemListContainer = () => {
       setLoading(false);
     };
     fetchData();
-  }, []);
+  }, [id]);
 
   return (
     <div className="item-list-container">
