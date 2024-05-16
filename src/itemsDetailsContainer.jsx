@@ -11,7 +11,7 @@ const fetchItems = () => {
     }, 2000);
   });
 };
-
+//
 const ItemDetailContainer = () => {
   const [items, setItems] = useState({});
   const [loading, setLoading] = useState(true);

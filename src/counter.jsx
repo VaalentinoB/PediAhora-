@@ -22,17 +22,17 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   };
 
   return (
-    <div class="cart-controls">
+    <div className="cart-controls">
       <div className="counter-container">
-        <button class="decrement-btn" onClick={handleDecrement}>
+        <button className="decrement-btn" onClick={handleDecrement}>
           -
         </button>
-        <span class="count">{count}</span>
-        <button class="increment-btn" onClick={handleIncrement}>
+        <span className="count">{count}</span>
+        <button className="increment-btn" onClick={handleIncrement}>
           +
         </button>
       </div>
-      <button class="add-to-cart-btn" onClick={handleAddToCart}>
+      <button className="add-to-cart-btn" onClick={handleAddToCart}>
         Agregar al carrito
       </button>
     </div>
