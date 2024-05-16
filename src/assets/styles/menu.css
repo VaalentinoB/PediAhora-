@@ -62,37 +62,78 @@
 }
 
 .card-container {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Ajusta el ancho según tus necesidades */
+  gap: 20px; /* Espacio entre las cards */
 }
 
 .card-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Ajusta el ancho para 3 cards por fila */
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.card-wrapper:hover {
+  transform: translateY(-10px);
 }
 
 .card-image {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
 }
 
 .card-details {
-  padding: 20px;
+  margin-top: 15px;
 }
 
 .card-title {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
-.card-price {
-  font-size: 16px;
-  color: #888;
-  margin-bottom: 10px;
+.card-price,
+.card-restaurant {
+  margin: 5px 0;
+}
+
+.button-wrapper {
+  margin-top: auto; /* Empuja el botón hacia la parte inferior */
+}
+
+.detail-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.detail-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    width: calc(50% - 20px); /* 2 cards por fila en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-wrapper {
+    width: calc(100% - 20px); /* 1 card por fila en pantallas muy pequeñas */
+  }
 }
 
 .card-restaurant {

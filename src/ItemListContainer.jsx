@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import products from "./producto.json";
-import Loading from "./loading";
-import "./assets/styles/menu.css";
 import { useParams } from "react-router-dom";
+import arrayProductos from "./producto.json";
 
-const fetchItems = (id) => {
+const fetchItems = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(id ? products.filter((item) => item.category === id) : products);
-    }, 1500);
+      resolve(arrayProductos);
+    }, 2000);
   });
 };
 
@@ -17,12 +15,11 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
-  console.log(id);
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchItems();
-      setItems(data);
+      setItems(id ? data.filter((item) => item.category == id) : data);
       setLoading(false);
     };
     fetchData();
@@ -31,7 +28,7 @@ const ItemListContainer = () => {
   return (
     <div className="item-list-container">
       <h1 className="item-text">Que vas a pedir hoy?</h1>
-      {loading ? <Loading /> : <ItemList items={items} />}
+      {loading ? <div>Cargando..</div> : <ItemList items={items} />}
     </div>
   );
 };
