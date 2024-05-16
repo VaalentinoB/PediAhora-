@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Loading from "./loading";
-import ItemDetail from "./ItemDetail";
+import ItemDetail from "./ItemDetails";
 import products from "./producto.json";
 
 const fetchItems = () => {

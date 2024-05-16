@@ -19,5 +19,3 @@ const Item = ({ item }) => {
 };
 
 export default Item;
-
-//* <ItemCount stock={10} initial={1} onAdd={(count) => console.log("Cantidad agregada", count)}/> *//
