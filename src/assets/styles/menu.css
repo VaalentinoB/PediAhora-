@@ -64,8 +64,9 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px; /* Ajusta el ancho según tus necesidades */
-  gap: 20px; /* Espacio entre las cards */
+  justify-content: center;
+  max-width: 1200px;
+  gap: 20px;
 }
 
 .card-wrapper {
@@ -74,7 +75,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: calc(33.333% - 20px); /* Ajusta el ancho para 3 cards por fila */
+  width: 1000px;
   box-sizing: border-box;
   text-align: center;
   transition: transform 0.3s ease;
@@ -107,7 +108,7 @@
 }
 
 .button-wrapper {
-  margin-top: auto; /* Empuja el botón hacia la parte inferior */
+  margin-top: auto;
 }
 
 .detail-btn {
@@ -126,13 +127,13 @@
 
 @media (max-width: 768px) {
   .card-wrapper {
-    width: calc(50% - 20px); /* 2 cards por fila en pantallas más pequeñas */
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .card-wrapper {
-    width: calc(100% - 20px); /* 1 card por fila en pantallas muy pequeñas */
+    width: calc(100% - 20px);
   }
 }
 
