@@ -60,13 +60,12 @@
   height: 24px;
   line-height: 1;
 }
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
-  gap: 20px;
+  gap: 20px; /* Gap between cards */
 }
 
 .card-wrapper {
@@ -75,7 +74,8 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 1000px;
+  /* Responsive width based on screen size */
+  width: calc(33.33% - 20px); /* Adjust gap size in calculation */
   box-sizing: border-box;
   text-align: center;
   transition: transform 0.3s ease;
@@ -125,15 +125,11 @@
   background-color: #0056b3;
 }
 
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
+  /* Adjust number of cards per row for smaller screens */
   .card-wrapper {
     width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .card-wrapper {
-    width: calc(100% - 20px);
   }
 }
 
