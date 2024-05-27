@@ -7,16 +7,9 @@ import {
   getDoc,
   getDocs,
   getFirestore,
+  query,
+  where,
 } from "firebase/firestore";
-import Item from "./Item";
-
-const fetchItems = () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(arrayProductos);
-    }, 2000);
-  });
-};
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -25,12 +18,26 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     const db = getFirestore();
-    const itemCollection = collection(db, "items");
-    getDocs(itemCollection).then((snapShot) => {
-      setItems(snapShot.docs.map((item) => ({ id: item.id, ...item.data() })));
-      setLoading(false);
+    const itemsCollection = collection(db, "items");
+    const resultQuery = query(
+      itemsCollection,
+      where("category", "==", "Sandwich")
+    );
+    getDocs(resultQuery).then((snapShot) => {
+      console.log(snapShot);
+      if (snapShot.size > 0) {
+        console.log("Existen Documentos!");
+        console.log(snapShot.docs);
+        setItems(
+          snapShot.docs.map((item) => ({ id: item.id, ...item.data() }))
+        );
+        setLoading(false);
+      } else {
+        console.log("No existen Documentos!");
+        setItems([]);
+      }
     });
-  });
+  }, [id]);
 
   return (
     <div className="item-list-container">
