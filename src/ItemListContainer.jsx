@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
-import arrayProductos from "./producto.json";
+import {
+  collection,
+  doc,
+  getDoc,
+  getDocs,
+  getFirestore,
+} from "firebase/firestore";
+import Item from "./Item";
 
 const fetchItems = () => {
   return new Promise((resolve) => {
@@ -17,13 +24,13 @@ const ItemListContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetchItems();
-      setItems(id ? data.filter((item) => item.category == id) : data);
+    const db = getFirestore();
+    const itemCollection = collection(db, "items");
+    getDocs(itemCollection).then((snapShot) => {
+      setItems(snapShot.docs.map((item) => ({ id: item.id, ...item.data() })));
       setLoading(false);
-    };
-    fetchData();
-  }, [id]);
+    });
+  });
 
   return (
     <div className="item-list-container">
