@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Loading from "./loading";
+import Loading from "../Pages/loading";
 import ItemDetail from "./ItemDetails";
-import products from "./producto.json";
+import products from "../producto.json";
 import { useParams } from "react-router-dom";
 
 const fetchItems = () => {

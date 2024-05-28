@@ -21,7 +21,7 @@ const ItemListContainer = () => {
     const itemsCollection = collection(db, "items");
     const resultQuery = query(
       itemsCollection,
-      where("category", "==", "Sandwich")
+      where("category", "==", `${id}`)
     );
     getDocs(resultQuery).then((snapShot) => {
       console.log(snapShot);

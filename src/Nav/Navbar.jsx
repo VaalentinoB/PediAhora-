@@ -1,6 +1,6 @@
-import "./assets/styles/menu.css";
-import icono from "./assets/favicon.png";
-import CartWidget from "./CartWidget";
+import "../assets/styles/menu.css";
+import icono from "../assets/favicon.png";
+import CartWidget from "../Cart/CartWidget";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {

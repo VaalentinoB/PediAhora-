@@ -1,5 +1,5 @@
-import "./assets/styles/details.css";
-import ItemCount from "./counter";
+import "../assets/styles/details.css";
+import ItemCount from "../Counter/counter";
 
 const ItemDetail = ({ items }) => {
   return (

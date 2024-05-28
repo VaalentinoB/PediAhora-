@@ -1,6 +1,6 @@
 import "./ItemList";
 import { Link } from "react-router-dom";
-import "./assets/styles/menu.css";
+import "../assets/styles/menu.css";
 
 const Item = ({ item }) => {
   return (
