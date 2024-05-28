@@ -12,6 +12,7 @@ import {
   writeBatch,
 } from "firebase/firestore";
 import Loading from "../Pages/loading";
+import { update } from "firebase/database";
 
 const Checkout = () => {
   const [cart, setCart] = useState([]);
@@ -20,8 +21,6 @@ const Checkout = () => {
   const [email, setEmail] = useState("");
   const [telefono, setTelefono] = useState("");
   const [orderId, setOrderId] = useState("");
-
-  // Acceder a una Colección usando filtros en Firestore
   useEffect(() => {
     const db = getFirestore();
     const itemsCollection = collection(db, "items");
@@ -43,24 +42,28 @@ const Checkout = () => {
 
   const generarOrden = () => {
     const buyer = { name: nombre, email: email, telephone: telefono };
+    console.log(buyer);
     const items = cart.map((item) => ({
       id: item.id,
       title: item.name,
       price: item.price,
     }));
     const order = { buyer: buyer, items: items, total: obtenerSumaTotal() };
+    console.log(order);
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
+    addDoc(ordersCollection, order).then((data) =>
+      addDoc(ordersCollection, order).then((data) => {
+        setOrderId(data.id);
+      })
+    );
 
-    const batch = writeBatch(db);
-    const doc1 = doc(db, "items", "DwP3KfW2k9Ge8HdlRUOm");
-    const doc2 = doc(db, "items", "QYRmQ28AkxpCBBiz9Iv8");
-    const doc3 = doc(db, "items", "yOQ7Su4k5OU8b6aesGkW");
-    batch.update(doc1, { stock: 20 });
-    batch.update(doc2, { stock: 30 });
-    batch.set(doc3, { stock: 50 });
-    batch.commit();
-    console.log("Documentos actualizados!");
+    //Actualizar doc
+    const orderRef = doc(db, "items", "IC5vDMXwA9529NaP1AKh");
+    getDoc(orderRef).then((producto) => {
+      const { stock } = producto.data();
+      updateDoc(orderRef, { stock: stock - 1 });
+    });
   };
 
   return (
