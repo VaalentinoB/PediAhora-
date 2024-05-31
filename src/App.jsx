@@ -4,21 +4,28 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from "./Item/itemsDetailsContainer";
 import NotFound from "./Pages/notFound";
 import CheckOut from "./CheckOut/CheckOut";
+import CartContextProvider from "./context/context";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path={"/"} element={<ItemListContainer />} />
-          <Route exact path={"/category/:id"} element={<ItemListContainer />} />
-          <Route exact path={"/item/:id"} element={<ItemDetailContainer />} />
-          <Route exact path={"/checkout"} element={<CheckOut />} />
+      <CartContextProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route exact path={"/"} element={<ItemListContainer />} />
+            <Route
+              exact
+              path={"/category/:id"}
+              element={<ItemListContainer />}
+            />
+            <Route exact path={"/item/:id"} element={<ItemDetailContainer />} />
+            <Route exact path={"/checkout"} element={<CheckOut />} />
 
-          <Route exact path={"*"} element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+            <Route exact path={"*"} element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </CartContextProvider>
     </>
   );
 }
