@@ -58,7 +58,6 @@ const Checkout = () => {
       })
     );
 
-    //Actualizar doc
     const orderRef = doc(db, "items", "IC5vDMXwA9529NaP1AKh");
     getDoc(orderRef).then((producto) => {
       const { stock } = producto.data();

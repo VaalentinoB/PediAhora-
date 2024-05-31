@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import {
+  addDoc,
   collection,
   doc,
   getDoc,
@@ -18,26 +19,32 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     const db = getFirestore();
-    const itemsCollection = collection(db, "items");
-    const resultQuery = query(
-      itemsCollection,
-      where("category", "==", `${id}`)
-    );
+    const itemsCollection = collection(db, "item");
+    const resultQuery = id
+      ? query(itemsCollection, where("category", "==", id))
+      : itemsCollection;
     getDocs(resultQuery).then((snapShot) => {
-      console.log(snapShot);
       if (snapShot.size > 0) {
         console.log("Existen Documentos!");
-        console.log(snapShot.docs);
         setItems(
           snapShot.docs.map((item) => ({ id: item.id, ...item.data() }))
         );
         setLoading(false);
       } else {
-        console.log("No existen Documentos!");
+        console.log("No existen");
         setItems([]);
       }
     });
   }, [id]);
+
+  // useEffect(() => {
+  //   const db = getFirestore();
+  //   const itemsCollection = collection(db, "item");
+  //   products.forEach((producto) => {
+  //     addDoc(itemsCollection, producto);
+  //   });
+  //   console.log("Prods cargados en la base de datos");
+  // }, []);
 
   return (
     <div className="item-list-container">
