@@ -1,26 +1,30 @@
 import { useContext } from "react";
-import "../assets/styles/details.css";
-import ItemCount from "../Counter/counter";
 import { CartContext } from "../context/context";
+import ItemCount from "../Counter/counter";
 
-const ItemDetail = ({ items }) => {
+const ItemDetail = ({ item }) => {
   const { addItem } = useContext(CartContext);
+
   const onAdd = (quantity) => {
-    addItem(items, quantity);
+    addItem(item, quantity);
   };
 
   return (
-    <>
-      <div className="item-card">
-        <img src={items.imageUrl} alt={items.name} className="item-image" />
-        <div className="item-details">
-          <h3 className="item-name">{items.name}</h3>
-          <h4 className="item-description">{items.description}</h4>
-          <p className="item-price">Precio: ${items.price}</p>
-          <ItemCount stock={items.stock} onAdd={onAdd} />
+    <div className="container my-5">
+      <div className="row">
+        <div className="col-md-4">
+          <img src={item.imageUrl} alt={item.name} className="img-fluid" />
+        </div>
+        <div className="col-md-8">
+          <h1>{item.name}</h1>
+          <p className="item-price">
+            <b>${item.price}</b>
+          </p>
+          <p>{item.description}</p>
+          <ItemCount stock={item.stock} onAdd={onAdd} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
