@@ -1,3 +1,5 @@
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Nav/Navbar";
 import ItemListContainer from "./Item/ItemListContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
