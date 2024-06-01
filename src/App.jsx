@@ -7,6 +7,7 @@ import ItemDetailContainer from "./Item/itemsDetailsContainer";
 import NotFound from "./Pages/notFound";
 import CheckOut from "./CheckOut/CheckOut";
 import CartContextProvider from "./context/context";
+import Cart from "./Cart/cart";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             />
             <Route exact path={"/item/:id"} element={<ItemDetailContainer />} />
             <Route exact path={"/checkout"} element={<CheckOut />} />
-
+            <Route exact path={"/cart"} element={<Cart />} />
             <Route exact path={"*"} element={<NotFound />} />
           </Routes>
         </BrowserRouter>

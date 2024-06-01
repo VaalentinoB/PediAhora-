@@ -8,6 +8,7 @@ const ItemDetail = ({ items }) => {
   const onAdd = (quantity) => {
     addItem(items, quantity);
   };
+
   return (
     <>
       <div className="item-card">
