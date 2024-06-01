@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import "../assets/styles/details.css";
 import ItemCount from "../Counter/counter";
+import { CartContext } from "../context/context";
 
 const ItemDetail = ({ items }) => {
+  const { addItem } = useContext(CartContext);
   return (
     <>
       <div className="item-card">
@@ -10,11 +13,7 @@ const ItemDetail = ({ items }) => {
           <h3 className="item-name">{items.name}</h3>
           <h4 className="item-description">{items.description}</h4>
           <p className="item-price">Precio: ${items.price}</p>
-          <ItemCount
-            stock={10}
-            initial={1}
-            onAdd={(count) => console.log("Cantidad agregada", count)}
-          />
+          <ItemCount stock={items.stock} initial={1} onAdd={addItem} />
         </div>
       </div>
     </>

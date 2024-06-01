@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
-  const [count, setCount] = useState(initial);
-
-  const [visible, SetVisible] = useState(true);
+const ItemCount = ({ stock, onAdd }) => {
+  const [count, setCount] = useState(1);
+  const [itemStock, setItemStock] = useState(stock);
+  const [visible, setVisible] = useState(true);
 
   const handleIncrement = () => {
-    if (count < stock) {
+    if (count < itemStock) {
       setCount(count + 1);
     }
   };
@@ -19,9 +19,11 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   };
 
   const handleAddToCart = () => {
-    if (count > 0 && count <= stock) {
+    if (count <= itemStock) {
+      setItemStock(itemStock - count);
       onAdd(count);
-      SetVisible(false);
+      setCount(1);
+      setVisible(false);
     }
   };
 
