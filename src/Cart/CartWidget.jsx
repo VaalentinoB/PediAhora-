@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import cart from "../assets/cart.png";
 import { CartContext } from "../context/context";
+import { Link } from "react-router-dom";
 import "../assets/styles/menu.css";
 const CartWidget = () => {
   const { getTotalProducts } = useContext(CartContext);
