@@ -1,70 +1,41 @@
 import { useEffect, useState } from "react";
-import {
-  addDoc,
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  getFirestore,
-  query,
-  updateDoc,
-  where,
-  writeBatch,
-} from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 import Loading from "../Pages/loading";
 import { update } from "firebase/database";
+import { useContext } from "react";
+import { CartContext } from "../context/context";
 
 const Checkout = () => {
-  const [cart, setCart] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { cart, getTotalProducts, getSumProducts } = useContext(CartContext);
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [telefono, setTelefono] = useState("");
   const [orderId, setOrderId] = useState("");
-  useEffect(() => {
-    const db = getFirestore();
-    const itemsCollection = collection(db, "items");
-    const resultQuery = query(itemsCollection, where("price", ">", 100));
-    getDocs(resultQuery).then((snapShot) => {
-      if (snapShot.size > 0) {
-        setCart(snapShot.docs.map((item) => ({ id: item.id, ...item.data() })));
-        setLoading(false);
-      } else {
-        console.log("No existen Documentos!");
-        setCart([]);
-      }
-    });
-  }, []);
-
-  const obtenerSumaTotal = () => {
-    return cart.reduce((acumulador, item) => (acumulador += item.price), 0);
-  };
 
   const generarOrden = () => {
     const buyer = { name: nombre, email: email, telephone: telefono };
-    console.log(buyer);
     const items = cart.map((item) => ({
       id: item.id,
       title: item.name,
       price: item.price,
     }));
-    const order = { buyer: buyer, items: items, total: obtenerSumaTotal() };
-    console.log(order);
+    const order = { buyer: buyer, items: items, total: getSumProducts() };
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
+
     addDoc(ordersCollection, order).then((data) =>
       addDoc(ordersCollection, order).then((data) => {
         setOrderId(data.id);
       })
     );
 
-    const orderRef = doc(db, "items", "IC5vDMXwA9529NaP1AKh");
-    getDoc(orderRef).then((producto) => {
-      const { stock } = producto.data();
-      updateDoc(orderRef, { stock: stock - 1 });
-    });
+    // const orderRef = doc(db, "item", "IC5vDMXwA9529NaP1AKh");
+    // getDoc(orderRef).then((producto) => {
+    // const { stock } = producto.data();
+    // updateDoc(orderRef, { stock: stock - 1 });
+    //});
+    //};
   };
-
   return (
     <div className="container my-5">
       <div className="row">
@@ -110,31 +81,31 @@ const Checkout = () => {
           </form>
         </div>
         <div className="col">
-          {loading ? (
-            <Loading />
-          ) : (
-            <table className="table">
-              <tbody>
-                {cart.map((item) => (
-                  <tr key={item.id}>
-                    <td className="align-middle">
-                      <img src={item.imagen} alt={item.name} width={64} />
-                    </td>
-                    <td className="align-middle">{item.name}</td>
-                    <td className="align-middle text-end">${item.price}</td>
-                  </tr>
-                ))}
-                <tr>
-                  <td colSpan={2}>
-                    <b>Total</b>
+          <table className="table">
+            <tbody>
+              {cart.map((item) => (
+                <tr key={item.id}>
+                  <td>
+                    <img src={item.imageUrl} alt={item.name} width={64} />
                   </td>
-                  <td className="text-end">
-                    <b>${obtenerSumaTotal()}</b>
+                  <td className="align-middle text-start">{item.name}</td>
+                  <td className="align-middle text-center">${item.price}</td>
+                  <td className="align-middle text-center">x{item.quantity}</td>
+                  <td className="align-middle text-center">
+                    ${item.quantity * item.price}
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          )}
+              ))}
+              <tr>
+                <td colSpan={4} className="align-middle text-center">
+                  <b>Total</b>
+                </td>
+                <td className="align-middle text-center">
+                  <b>${getSumProducts()}</b>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div className="row my-5">
