@@ -1,1 +1,5 @@
-E-commerce basado en famosa aplicacion para pedidos de comida rapida, desarrollada en React.js , actualmente en desarrollo 
+# PediAhora!
+
+## E-Commerce basado en famosa aplicacion de pedidos de comida rapida!
+
+### Actualmente en desarollo, sumando nuevas utilidades
