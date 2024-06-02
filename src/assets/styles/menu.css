@@ -46,6 +46,10 @@
   width: 70px;
   height: auto;
 }
+.item-text {
+  display: flex;
+  justify-content: center;
+}
 
 .cart-counter {
   position: absolute;
