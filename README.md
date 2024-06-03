@@ -2,6 +2,6 @@
 
 ## E-Commerce basado en famosa aplicacion de pedidos de comida rapida!
 
-### Actualmente en desarollo, sumando nuevas utilidades
+### Actualmente en desarollo en *REACT.jsx*, sumando nuevas utilidades
 
-**Desarrollado en REACT.jsx**
+
